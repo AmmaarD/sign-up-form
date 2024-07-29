@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="imagery-container">
+        <div class="logo-container">
+            <img class="logo" src="./odin.png" alt="odin logo">
+            <p>Odin</p>
+        </div>
+        <p class="img-credit">
+            Photo by
+            <a target="_blank" href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Halie West</a>
+            on
+            <a target="_blank" href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+          </p>
+    </div>
+    <div class="sign-in-container">
+        <p>This is not a real online service! You know you need something like this in youe life to help you realize your deepest dreams. Sign up now to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+        <form action="sign-up-form/submit" method="post">
+            <div class="inputs-container">
+                <h1>Let's do this!</h1>
+                <div class="input-row">
+                    <div class="label-and-input">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="label-and-input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="label-and-input">
+                        <label for="email">EMAIL</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="label-and-input">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="text" name="email" id="phone-number">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="label-and-input">
+                        <label for="password">PASSWORD</label>
+                        <input type="text" name="password" id="password">
+                        <p id="error-message" style="color: red; display: none;">* Passwords do not match.</p>
+                    </div>
+                    <div class="label-and-input">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="text" name="confirm-password" id="confirm-password">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="create-account">Create Account</button>
+        </form>
+        <p id="existing-account">Already have an account? <a id="login-a" href="#">Log In</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

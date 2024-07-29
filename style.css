@@ -1,0 +1,141 @@
+:root {
+    --left-space: 48px;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./Norse-Bold.otf");
+  }
+
+.imagery-container {
+    background-image: url("./leaves.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    font-family: "Norse Bold";
+    height: 100px;
+    margin-top: 40%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.img-credit {
+    font-size: 0.9rem;
+}
+
+.img-credit a, .img-credit a:visited {
+    color: white;
+}
+
+
+.sign-in-container {
+    width: 60%;
+    background-color: #f9fafb;
+    min-height: 100vh;
+}
+
+.sign-in-container > p {
+    font-size: 1.4rem;
+    margin-left: var(--left-space);
+    font-weight: bold;
+    max-width: 80%;
+    margin-bottom: 8px;
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 84px;
+    margin-bottom: 18px;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 5px;
+}
+
+input {
+    box-sizing: border-box;
+    border: 2px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 100%;
+    font-size: 1rem;
+    margin-right: 32px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.input-row .label-and-input input.invalid {
+    border-color: red; /* Red border for invalid input */
+}
+
+
+.inputs-container {
+    background-color: white;
+    margin-top: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: var(--left-space);
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+#create-account {
+    margin-left: var(--left-space);
+    margin-top: 32px;
+    border: none;
+    background-color: #596D48;
+    padding: 12px 48px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#existing-account {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 32px;
+}
+
+#login-a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
